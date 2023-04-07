@@ -24,10 +24,10 @@ import numpy as np
 
 data = ''
 
-for i, f in enumerate(sorted(glob.glob('/storage/coda1/p-vsarkar9/0/tzhou80/LanguageModel/novels/*.txt'))):
+for i, f in enumerate(sorted(glob.glob('/home/tzhou80/projects/LanguageModel/novels/*.txt'))):
     data += open(f).read()
-    if i == 10:
-        break
+    # if i == 100:
+    #     break
 
 
 print(f"length of dataset in characters: {len(data):,}")
